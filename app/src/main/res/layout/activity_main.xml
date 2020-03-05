@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/lvItems"
+        android:layout_width="wrap_content"
+        android:layout_height="606dp"
+        android:layout_above="@+id/etNewItem"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="23dp"
+        android:background="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="100dp"
+        android:layout_height="62dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="18dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Add"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etNewItem"
+        android:layout_width="254dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="22dp"
+        android:layout_toStartOf="@+id/btnAddItem"
+        android:layout_toLeftOf="@+id/btnAddItem"
+        android:ems="10"
+        android:hint="Enter task..."
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        android:textColor="#00f"
+        android:textColorHint="#00f"
+        android:textSize="20sp" />
+
+</RelativeLayout>
